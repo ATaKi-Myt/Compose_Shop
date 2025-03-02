@@ -1,4 +1,4 @@
-services
+services:
   npc: # 服务名称
     image: yisier1/npc:latest # 镜像名称（可更改冒号后版本）
     container_name: npc # 容器名称（可更改）
