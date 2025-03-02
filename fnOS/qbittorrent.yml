@@ -1,0 +1,16 @@
+services:
+  qbittorrent: # 服务名称
+    image: linuxserver/qbittorrent:4.6.6 # 镜像名称（可更改冒号后版本）
+    container_name: qbittorrent # 容器名称（可更改）
+    ports: # 容器端口（可更改冒号前端口）
+      - 3020:3020
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /vol1/1000/Docker/qbittorrent:/config
+      - /vol1/1000/Video:/downloads
+    environment: # 环境变量
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - WEBUI_PORT=3020
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
