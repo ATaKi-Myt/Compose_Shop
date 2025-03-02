@@ -1,0 +1,33 @@
+services:
+
+  teamspeak: # 服务名称
+    image: teamspeak:latest # 镜像名称（可更改冒号后版本）
+    container_name: teamspeak # 容器名称（可更改）
+    ports: # 容器端口（可更改冒号前端口）
+      - 10010:9987/udp
+      - 10011:30033
+      - 10012:41144
+      - 10013:10011
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /vol1/1000/Docker/teamspeak:/var/ts3server
+    environment:
+      TS3SERVER_DB_PLUGIN: ts3db_mariadb
+      TS3SERVER_DB_SQLCREATEPATH: create_mariadb
+      TS3SERVER_DB_HOST: db
+      TS3SERVER_DB_USER: root
+      TS3SERVER_DB_PASSWORD: password
+      TS3SERVER_DB_NAME: teamspeak
+      TS3SERVER_DB_WAITUNTILREADY: 30
+      TS3SERVER_LICENSE: accept
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
+
+  mysql:
+    image: mariadb:latest
+    container_name: mysql # 容器名称（可更改）
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /vol1/1000/Docker/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: teamspeak
+    restart: always # 总是启动容器
