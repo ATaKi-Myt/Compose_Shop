@@ -2,7 +2,7 @@
 
 # 定义 Compose 文件名称数组
 compose_files=(
-    "nastool"
+    "nastools"
     "moviepilot"
     "jellyfin"
     "emby"
