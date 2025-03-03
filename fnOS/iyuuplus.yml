@@ -13,5 +13,5 @@ services:
       - PUID=0
       - PGID=0
       - TZ=Asia/Shanghai
-    restart: always # 总是启动容器
-    network_mode: bridge # 网络桥接
+    restart: always
+    network_mode: bridge
