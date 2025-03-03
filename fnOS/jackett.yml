@@ -10,7 +10,6 @@ services:
     environment: # 环境变量
       - PUID=0
       - PGID=0
-      - TZ=Asia/Shanghai
       - AUTO_UPDATE=false
     restart: always # 总是启动容器
     network_mode: bridge # 网络桥接
