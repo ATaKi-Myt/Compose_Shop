@@ -1,0 +1,21 @@
+services:
+  siyuan-note-unlock: # 服务名称
+    image: apkdv/siyuan-unlock:latest # 镜像名称（可更改冒号后版本）
+    container_name: siyuan-note-unlock # 容器名称（可更改）
+    privileged: true # 配置最高权限
+    ports: # 容器端口（可更改冒号前端口）
+      - 7040:6806/tcp
+    command:
+      - --workspace=/siyuan/workspace/
+      - --accessAuthCode=100
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /volume1/@home/Testroot/Docker/siyuan-note-unlock:/siyuan/workspace
+    environment:
+      - PUID=1001
+      - PGID=100
+      - UMASK=022
+      - TZ=Asia/Shanghai
+      - LANG=zh_CN.UTF-8
+      - LC_ALL=zh_CN.UTF-8
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
