@@ -1,0 +1,11 @@
+services:
+  sun-panel: # 服务名称
+    image: hslr/sun-panel:latest # 镜像名称（可更改冒号后版本）
+    container_name: sun-panel # 容器名称（可更改）
+    ports: # 容器端口（可更改冒号前端口）
+      - 9000:3002
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /mnt/dm-1/.ugreen_nas/509155/Docker/sun-panel:/app/conf
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
