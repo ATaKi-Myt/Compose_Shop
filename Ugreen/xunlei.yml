@@ -1,0 +1,18 @@
+services:
+  xunlei: # 服务名称
+    image: cnk3x/xunlei:latest # 镜像名称（可更改冒号后版本）
+    container_name: xunlei # 容器名称（可更改）
+    privileged: true # 配置最高权限
+    ports: # 容器端口（可更改冒号前端口）
+      - 3035:2345
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /mnt/dm-1/.ugreen_nas/509155/Docker/xunlei:/xunlei/data
+      - /mnt/dm-1/.ugreen_nas/509155/Downloads:/xunlei/downloads
+    environment: # 环境变量
+      - XL_GID=0
+      - XL_UID=0
+      - TZ=Asia/Shanghai
+      - XL_DASHBOARD_USERNAME=admin
+      - XL_DASHBOARD_PASSWORD=admin
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接  
