@@ -1,0 +1,19 @@
+services:
+  wps-office: # 服务名称
+    image: linuxserver/wps-office:chinese # 镜像名称（可更改冒号后版本）
+    container_name: wps-office # 容器名称（可更改）
+    ports: # 容器端口（可更改冒号前端口）
+      - 7000:3000
+      - 7001:3001
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /mnt/dm-1/.ugreen_nas/509155/Docker/wps-office/config:/config
+      - /mnt/dm-1/.ugreen_nas/509155/Docker/wps-office/Desktop:/config/Desktop
+      - /mnt/dm-1/.ugreen_nas/509155/Docker/wps-office/Fonts:/usr/share/fonts/wps-fonts
+    environment: # 环境变量
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai
+      - CUSTOM_USER=admin
+      - PASSWORD=admin
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
