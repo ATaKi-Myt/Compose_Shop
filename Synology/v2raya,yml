@@ -1,0 +1,13 @@
+services:
+  v2raya: # 服务名称
+    image: v2raya/v2raya:latest # 镜像名称（可更改冒号后版本）
+    container_name: v2raya # 容器名称（可更改）
+    privileged: true
+    ports: # 容器端口（可更改冒号前端口）
+      - 8020:2017
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /volume1/My/Docker/v2raya:/etc/v2raya
+    environment: # 环境变量
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
