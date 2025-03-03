@@ -1,0 +1,13 @@
+services:
+  vertex:
+    image: lswl/vertex:latest
+    container_name: vertex
+    ports: # 容器端口（可更改冒号前端口）
+      - 3050:32110
+    volumes:
+      - /mnt/dm-1/.ugreen_nas/509155/Docker/vertex:/vertex
+    environment:
+      - PORT=32110
+      - TZ=Asia/Shanghai
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
