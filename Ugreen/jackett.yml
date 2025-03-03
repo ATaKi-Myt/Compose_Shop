@@ -1,0 +1,16 @@
+services:
+  jackett: # 服务名称
+    image: linuxserver/jackett:latest # 镜像名称（可更改冒号后版本）
+    container_name: jackett # 容器名称（可更改）
+    ports: # 容器端口（可更改冒号前端口）
+      - 3040:9117
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /mnt/dm-1/.ugreen_nas/509155/Docker/jackett/config:/config
+      - /mnt/dm-1/.ugreen_nas/509155/Docker/jackett/downloads:/downloads
+    environment: # 环境变量
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai
+      - AUTO_UPDATE=false
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
