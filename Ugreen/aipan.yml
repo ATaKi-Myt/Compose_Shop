@@ -1,0 +1,8 @@
+services:
+  aipan: # 服务名称
+    image: fooololo/aipan-netdisk-search:latest # 镜像名称（可更改冒号后版本）
+    container_name: aipan # 容器名称（可更改）
+    ports: # 容器端口（可更改冒号前端口）
+      - 3045:3000
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
