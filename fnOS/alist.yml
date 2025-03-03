@@ -1,15 +1,15 @@
 services:
-  alist: # 服务名称
-    image: xhofe/alist:latest # 镜像名称（可更改冒号后版本）
-    container_name: alist # 容器名称（可更改）
-    ports: # 容器端口（可更改冒号前端口）
+  alist:
+    image: xhofe/alist:latest
+    container_name: alist
+    ports:
       - 7050:5244
-    volumes: # 冒号前替换成自身路径即可（可更改）
+    volumes:
       - /vol1/1000/Docker/alist:/opt/alist/data
     environment:
       - PUID=0
       - PGID=0
       - UMASK=022
       - TZ=Asia/Shanghai
-    restart: always # 总是启动容器
-    network_mode: bridge # 网络桥接
+    restart: always
+    network_mode: bridge
