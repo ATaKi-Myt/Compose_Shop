@@ -1,0 +1,16 @@
+services:
+  nastools: # 服务名称
+    image: nastools/nas-tools:latest # 镜像名称（可更改冒号后版本）
+    container_name: nastools # 容器名称（可更改）
+    ports: # 容器端口（可更改冒号前端口）
+      - 3000:3000 
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /volume1/@home/Testroot/Docker/nastools:/config
+      - /volume1/@home/Testroot/Video:/downloads
+    environment: # 环境变量
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai
+      - UMASK=022
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
