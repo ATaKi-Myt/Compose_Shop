@@ -1,15 +1,15 @@
 services:
-  komga: # 服务名称
-    image: gotson/komga:latest # 镜像名称（可更改冒号后版本）
-    container_name: komga # 容器名称（可更改）
-    ports: # 容器端口（可更改冒号前端口）
+  komga:
+    image: gotson/komga:latest
+    container_name: komga
+    ports:
       - 6010:25600
-    volumes: # 冒号前替换成自身路径即可（可更改）
+    volumes:
       - /volume1/@home/Testroot/Docker/komga/config:/config
       - /volume1/@home/Testroot/Docker/komga/data:/data
-    environment: # 环境变量
+    environment:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Shanghai
-    network_mode: bridge # 总是启动容器
-    restart: always # 网络桥接
+    network_mode: bridge
+    restart: always
