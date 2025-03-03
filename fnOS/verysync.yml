@@ -1,10 +1,10 @@
 services:
-  verysync: # 服务名称
-    image: jonnyan404/verysync:latest # 镜像名称（可更改冒号后版本）
-    container_name: verysync # 容器名称（可更改）
-    ports: # 容器端口（可更改冒号前端口）
+  verysync:
+    image: jonnyan404/verysync:latest
+    container_name: verysync
+    ports:
       - 7010:8886
-    volumes: # 冒号前替换成自身路径即可（可更改）
+    volumes:
       - /vol1/1000/Synchronous:/data
-    restart: always # 总是启动容器
-    network_mode: bridge # 网络桥接
+    restart: always
+    network_mode: bridge
