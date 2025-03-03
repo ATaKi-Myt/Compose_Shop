@@ -1,0 +1,11 @@
+services:
+  navidrome: # 服务名称
+    image: deluan/navidrome:latest # 镜像名称（可更改冒号后版本）
+    container_name: navidrome # 容器名称（可更改）
+    ports: # 容器端口（可更改冒号前端口）
+      - "4000:4533"
+    volumes: # 冒号前替换成自身路径即可（可更改）
+      - /volume1/My/Docker/navidrome:/data
+      - /volume1/My/Music:/music
+    restart: always # 总是启动容器
+    network_mode: bridge # 网络桥接
