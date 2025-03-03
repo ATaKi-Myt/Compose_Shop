@@ -1,16 +1,16 @@
 services:
-  kkfileview: # 服务名称
-    image: pi4k8s/kkfileview:4.4.0 # 镜像名称（可更改冒号后版本）
-    container_name: kkfileview # 容器名称（可更改）
-    ports: # 容器端口（可更改冒号前端口）
+  kkfileview:
+    image: pi4k8s/kkfileview:4.4.0
+    container_name: kkfileview
+    ports:
     - 7030:8012
-    volumes: # 冒号前替换成自身路径即可（可更改）
+    volumes:
        - /volume1/@home/Testroot/Docker/kkfileview:/opt/kkFileView-4.4.0
-    environment: # 环境变量
+    environment:
       - KK_OFFICE_PREVIEW_TYPE=pdf
       - KK_OFFICE_PREVIEW_SWITCH_DISABLED=true
       - KK_PDF_DOWNLOAD_DISABLE=true
       - KK_FILE_UPLOAD_ENABLED=false
       - KK_CONTEXT_PATH=/
-    restart: always # 总是启动容器
-    network_mode: bridge # 网络桥接
+    restart: always
+    network_mode: bridge
