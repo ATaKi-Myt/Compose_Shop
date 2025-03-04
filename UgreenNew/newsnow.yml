@@ -1,8 +1,8 @@
 services:
-  newsnow: # 服务名称
-    image: ghcr.io/ourongxing/newsnow:latest # 镜像名称（可更改冒号后版本）
-    container_name: newsnow # 容器名称（可更改）
-    ports: # 容器端口（可更改冒号前端口）
+  newsnow:
+    image: ghcr.io/ourongxing/newsnow:latest
+    container_name: newsnow
+    ports:
       - 7060:4444
     environment:
       - G_CLIENT_ID=
@@ -10,5 +10,5 @@ services:
       - JWT_SECRET=
       - INIT_TABLE=true=
       - ENABLE_CACHE=true
-    network_mode: bridge # 总是启动容器
-    restart: always # 网络桥接
+    network_mode: bridge
+    restart: always
