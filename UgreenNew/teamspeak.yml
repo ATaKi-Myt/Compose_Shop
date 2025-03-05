@@ -15,6 +15,7 @@ services:
     image: teamspeak
     container_name: teamspeak
     privileged: true
+    user: 1001:100
     ports:
       - 10010:9987/udp
       - 30033:30033
@@ -25,8 +26,6 @@ services:
       - /volume1/@home/Testroot/Docker/teamspeak/files:/var/ts3server/files
       - /volume1/@home/Testroot/Docker/teamspeak/logs:/var/ts3server/logs
     environment:
-      - PUID=1001
-      - PGID=100
       - TS3SERVER_DB_PLUGIN=ts3db_mariadb
       - TS3SERVER_DB_SQLCREATEPATH=create_mariadb
       - TS3SERVER_DB_HOST=db
