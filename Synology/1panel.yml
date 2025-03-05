@@ -1,10 +1,10 @@
 services:
-  1panel: # 服务名称
-    image: koryking/1panel:latest # 镜像名称（可更改冒号后版本）
-    container_name: 1panel # 容器名称（可更改）
-    ports: # 容器端口（可更改冒号前端口）
+  1panel:
+    image: koryking/1panel:latest
+    container_name: 1panel
+    ports:
       - 11000:10086
-    volumes: # 冒号前替换成自身路径即可（可更改）
+    volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /volume1/My/Docker/1panel:/opt/1panel
       - /volume1/My/:/volume1/My/
@@ -15,5 +15,5 @@ services:
       - PANEL_ENTRANCE=123456
       - PANEL_USERNAME=admin
       - PANEL_PASSWORD=password
-    network_mode: bridge # 总是启动容器
-    restart: always # 网络桥接
+    network_mode: bridge
+    restart: always
