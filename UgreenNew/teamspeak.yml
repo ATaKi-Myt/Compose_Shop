@@ -5,7 +5,7 @@ services:
     container_name: mysql
     privileged: true
     volumes:
-      - /vol1/1000/Docker/mysql:/var/lib/mysql
+      - /volume1/@home/Testroot/Docker/mysql:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: teamspeak
