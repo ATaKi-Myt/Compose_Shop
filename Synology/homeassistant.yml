@@ -1,12 +1,12 @@
 services:
-  homeassistant: # 服务名称
-    image: homeassistant/home-assistant:latest # 镜像名称（可更改冒号后版本）
-    container_name: homeassistant # 容器名称（可更改）
-    ports: # 容器端口（可更改冒号前端口）
+  homeassistant:
+    image: homeassistant/home-assistant:latest
+    container_name: homeassistant
+    ports:
       - 11020:8123
-    volumes: # 冒号前替换成自身路径即可（可更改）
+    volumes:
       - /volume1/My/Docker/homeassistant:/config
     environment:
       - TZ=Asia/Shanghai
-    restart: always # 总是启动容器
-    network_mode: bridge # 网络桥接
+    restart: always
+    network_mode: bridge
