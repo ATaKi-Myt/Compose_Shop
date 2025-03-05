@@ -7,7 +7,5 @@ services:
       - 8020:2017
     volumes:
       - /volume1/@home/Testroot/Docker/v2raya:/etc/v2raya
-    environment:
-      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     restart: always
     network_mode: bridge
