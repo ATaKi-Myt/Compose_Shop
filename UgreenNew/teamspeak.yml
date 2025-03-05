@@ -15,6 +15,7 @@ services:
     image: teamspeak
     container_name: teamspeak
     privileged: true
+    user: 1001:10
     ports:
       - 10010:9987/udp
       - 30033:30033
