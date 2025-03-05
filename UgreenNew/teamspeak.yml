@@ -26,6 +26,7 @@ services:
       - /volume1/@home/Testroot/Docker/teamspeak/files:/var/ts3server/files
       - /volume1/@home/Testroot/Docker/teamspeak/logs:/var/ts3server/logs
       - /volume1/@home/Testroot/Docker/teamspeak/var/run/ts3server:/var/run/ts3server
+      - /volume1/@home/Testroot/Docker/teamspeak/licensekey.dat:/var/ts3server/licensekey.dat
     environment:
       TS3SERVER_DB_PLUGIN: ts3db_mariadb
       TS3SERVER_DB_SQLCREATEPATH: create_mariadb
