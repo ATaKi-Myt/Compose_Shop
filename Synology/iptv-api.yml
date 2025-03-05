@@ -1,11 +1,11 @@
 services:
-  iptv-api: # 服务名称
-    image: guovern/iptv-api:latest # 镜像名称（可更改冒号后版本）
-    container_name: iptv-api # 容器名称（可更改）
-    ports: # 容器端口（可更改冒号前端口）
+  iptv-api:
+    image: guovern/iptv-api:latest
+    container_name: iptv-api
+    ports:
       - 3055:8000
-    volumes: # 冒号前替换成自身路径即可（可更改）
+    volumes:
       - /volume1/My/Docker/iptv-api/config:/iptv-api/config
       - /volume1/My/Docker/iptv-api/output:/iptv-api/output
-    restart: always # 总是启动容器
-    network_mode: bridge # 网络桥接
+    restart: always
+    network_mode: bridge
