@@ -1,7 +1,7 @@
 services:
 
   db:
-    image: mariadb
+    image: mariadb:latest
     container_name: mysql
     privileged: true
     volumes:
@@ -10,9 +10,9 @@ services:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: teamspeak
     restart: always
-  
+
   teamspeak:
-    image: teamspeak
+    image: teamspeak:latest
     container_name: teamspeak
     privileged: true
     user: 1001:10
