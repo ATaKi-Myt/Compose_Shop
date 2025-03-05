@@ -1,5 +1,5 @@
+version: '3'
 services:
-
   db:
     image: mariadb
     container_name: mysql
@@ -10,7 +10,6 @@ services:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: teamspeak
     restart: always
-  
   teamspeak:
     image: teamspeak
     container_name: teamspeak
@@ -22,6 +21,16 @@ services:
       - 10011:10011
     volumes:
       - /volume1/@home/Testroot/Docker/teamspeak:/var/ts3server
+      - type: bind
+        source: /volume1/@home/Testroot/Docker/teamspeak/logs
+        target: /var/ts3server/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /volume1/@home/Testroot/Docker/teamspeak/files
+        target: /var/ts3server/files
+        bind:
+          create_host_path: true
     environment:
       TS3SERVER_DB_PLUGIN: ts3db_mariadb
       TS3SERVER_DB_SQLCREATEPATH: create_mariadb
@@ -32,3 +41,11 @@ services:
       TS3SERVER_DB_WAITUNTILREADY: 30
       TS3SERVER_LICENSE: accept
     restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:10011"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
