@@ -5,9 +5,9 @@ services:
     ports:
       - 11000:10086
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
       - /mnt/dm-1/.ugreen_nas/509155/Docker/1panel:/opt/1panel
       - /mnt/dm-1/.ugreen_nas/509155/:/mnt/dm-1/.ugreen_nas/509155/
+      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - TZ=Asia/Shanghai
       - PANEL_BASE_DIR=/opt/1panel
