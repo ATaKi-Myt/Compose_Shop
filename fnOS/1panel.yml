@@ -5,9 +5,9 @@ services:
     ports:
       - 11000:10086
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
       - /vol1/1000/Docker/1panel:/opt/1panel
       - /vol1/1000/:/vol1/1000/
+      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - TZ=Asia/Shanghai
       - PANEL_BASE_DIR=/opt/1panel
