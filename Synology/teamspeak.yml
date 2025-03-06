@@ -4,7 +4,7 @@ services:
     image: mariadb:latest
     container_name: mysql
     privileged: true
-    user: 1026:100
+    user: "1026:100"
     volumes:
       - /volume1/My/Docker/mysql:/var/lib/mysql
     environment:
@@ -16,7 +16,7 @@ services:
     image: teamspeak:latest
     container_name: teamspeak
     privileged: true
-    user: 1026:100
+    user: "1026:100"
     ports:
       - 10010:9987/udp
       - 30033:30033
