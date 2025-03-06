@@ -3,13 +3,13 @@ services:
     image: nastools/nas-tools:latest
     container_name: nastools
     ports:
-      - 3001:3000 
+      - 3000:3000 
     volumes:
       - /volume1/My/Docker/nastools:/config
       - /volume1/My/Video:/downloads
     environment:
-      - PUID=0
-      - PGID=0
+      - PUID=1026
+      - PGID=100
       - TZ=Asia/Shanghai
       - UMASK=022
     restart: always
