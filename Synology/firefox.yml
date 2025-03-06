@@ -1,4 +1,4 @@
-services；
+services:
   firefox:
     image: jlesage/firefox:latest
     container_name: firefox
