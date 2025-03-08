@@ -1,0 +1,18 @@
+services:
+  cashbook:
+    container_name: cashbook
+    image: dingdangdog/cashbook:latest
+    ports:
+      - 12010:9090
+    volumes:
+      - /vol1/1000/Docker/cashbook/data:/app/data
+    environment:
+      DATABASE_URL: "postgresql://postgresql:postgresql.@127.0.0.1:5432/cashbook?schema=public"
+      NUXT_DATA_PATH: "/app/data"
+      NUXT_APP_URL: "https://127.0.0.1:5432"
+      NUXT_AUTH_ORIGIN: "https://127.0.0.1:5432/api/auth"
+      NUXT_AUTH_SECRET: "auth_secret"
+      NUXT_ADMIN_USERNAME: "admin"
+      NUXT_ADMIN_PASSWORD: "a9652bbc082dd2f97df787c28e2f0e504e8189c2ab1480f2bdc726e9ddc4a805"
+    restart: always
+    network_mode: bridge
