@@ -1,0 +1,15 @@
+services:
+  shoko:
+    container_name: shoko
+    image: shokoanime/server:latest
+    ports:
+      - 8111:8111
+    environment:
+      - PUID=1000
+      - PGID=1001
+      - TZ=Asia/Shanghai
+    volumes:
+      - /vol1/1000/Docker/shoko/config:/home/shoko/.shoko
+      - /vol1/1000/Video/anime:/mnt/anime
+    restart: always
+    network_mode: bridge
