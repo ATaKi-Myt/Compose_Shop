@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    ports:
+      - 11040:3306
+    volumes:
+      - /vol1/1000/Docker/mysql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: database
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: password
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    network_mode: bridge
