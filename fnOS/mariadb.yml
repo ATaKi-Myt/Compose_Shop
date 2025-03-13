@@ -8,7 +8,7 @@ services:
       - /vol1/1000/Docker/mariadb/data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_DATABASE: database
+      MYSQL_DATABASE: teamspeak
       MYSQL_USER: admin
       MYSQL_PASSWORD: 123456
     restart: always
