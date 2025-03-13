@@ -1,0 +1,10 @@
+services:
+  mariadb:
+    image: mariadb
+    container_name: mariadb
+    volumes:
+      - /vol1/1000/Docker/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: teamspeak
+    restart: always
