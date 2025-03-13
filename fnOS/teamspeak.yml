@@ -13,7 +13,7 @@ services:
     environment:
       TS3SERVER_DB_PLUGIN: ts3db_mariadb
       TS3SERVER_DB_SQLCREATEPATH: create_mariadb
-      TS3SERVER_DB_HOST: db
+      TS3SERVER_DB_HOST: mariadb
       TS3SERVER_DB_USER: root
       TS3SERVER_DB_PASSWORD: 123456
       TS3SERVER_DB_NAME: teamspeak
