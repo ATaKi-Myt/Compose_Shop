@@ -12,4 +12,4 @@ services:
       MYSQL_USER: admin
       MYSQL_PASSWORD: 123456
     restart: always
-    network_mode: bridge
+    network_mode: teamspeak
