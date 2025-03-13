@@ -1,15 +1,5 @@
 services:
 
-  db:
-    image: mariadb
-    container_name: mysql
-    volumes:
-      - /vol1/1000/Docker/mysql:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: teamspeak
-    restart: always
-  
   teamspeak:
     image: teamspeak
     container_name: teamspeak
@@ -25,8 +15,9 @@ services:
       TS3SERVER_DB_SQLCREATEPATH: create_mariadb
       TS3SERVER_DB_HOST: db
       TS3SERVER_DB_USER: root
-      TS3SERVER_DB_PASSWORD: password
+      TS3SERVER_DB_PASSWORD: 123456
       TS3SERVER_DB_NAME: teamspeak
       TS3SERVER_DB_WAITUNTILREADY: 30
       TS3SERVER_LICENSE: accept
     restart: always
+    network_mode: teamspeak
