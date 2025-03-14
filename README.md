@@ -52,17 +52,21 @@ Compose 商店致力于为您提供便捷高效的 Docker 容器配置解决方�
 | 45 | lyricapi | 音流刮削器 |
 | 46 | mariadb | 数据库 |
 ### 持续更新容器中......
-## 三、Compose_Shop 使用指南
-### 1、拉取三人行服务包
 
-```bash
+* 打开 **FinalShell** 软件
+* 进入 **root** 权限，输入`sudo -i` 并输入飞牛 **密码**，进入 root 权限
+* 输入`cd/vol1/1000/` 进入用户文件夹根目录，`mkdir Compose` 创建 Compose 文件夹
+* 输入`cd Compose` 进入 Compose 文件夹，并输入如下命令
+
+```
 wget https://gh.llkk.cc/https://raw.githubusercontent.com/ATaKi-Myt/Last_Three_Lazy_bag/refs/heads/main/Last_Three_Service_Package.sh
 ```
 
-### 2、执行 3 号服务
-### 3、输入解密密码，需要找作者获取
-### 4、输入脚本密码，需要找作者获取
-### 5、进入脚本，选择系统，开始安装即可
+* 拉取完成，`bash Last_Three_Service_Package.sh` 运行脚本，选择服务 3 拉取 Compose\_Shop 脚本
+* 输入解密密码进行解密，解密密码找作者免费获取
+* 拉取完成，运行脚本，输入脚本密码，脚本密码找作者免费获取
+* 选择系统，选择 Docker 安装即可
+  
 ## 四、内置功能
 ### 1、检测是否为 root 权限运行
 由于脚本运行需要 root 权限，系统会自动检测运行模式。若未处于 root 模式，将提示用户进入 root 模式，否则退出脚本。同时，系统支持直接引导用户进入 root 模式。
