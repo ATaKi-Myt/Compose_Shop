@@ -1,0 +1,12 @@
+services:
+  homebox:
+    image: docker.io/hfhc1309/homebox-zh:latest
+    container_name: homebox
+    restart: unless-stopped
+    environment:
+      - HBOX_WEB_MAX_UPLOAD_SIZE=10 # 限制最大上传大小10M
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./data:/data/
+    ports:
+      - 3100:7745
