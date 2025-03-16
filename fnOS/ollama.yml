@@ -3,7 +3,7 @@ services:
     image: ollama/ollama:latest
     container_name: ollama
     ports:
-      - "11434:11434"
+      - 11434:11434
     volumes:
       - /vol1/1000/Docker/ollama:/root/.ollama
       - /vol1/1000/Docker/ollama/models:/data/models
