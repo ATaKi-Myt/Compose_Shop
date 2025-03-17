@@ -43,11 +43,11 @@ Compose 商店致力于为您提供便捷高效的 Docker 容器配置解决方�
 | 36 | watchtower | 自动检测更新镜像 |
 | 37 | cloudsaver | 115 / 夸克网盘资源转存工具 |
 | 38 | ip-tool | ip 检测工具箱 |
-| 39 | cashbook | 在线图书馆 |
+| 39 | cashbook | 记账工具 |
 | 40 | wallos | 订阅服务统计 |
 | 41 | mysql | 数据库 |
 | 42 | postgres | 数据库 |
-| 43 | shoko | 动漫管理服务器 |
+| 43 | ezbookkeeping | 记账工具 |
 | 44 | chinesesubfinder | 字幕下载工具 |
 | 45 | lyricapi | 音流刮削器 |
 | 46 | mariadb | 数据库 |
