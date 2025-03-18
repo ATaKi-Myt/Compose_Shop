@@ -5,7 +5,7 @@ services:
     ports:
       - 12000:19798
     volumes:
-      - /vol1/1000/CloudPan/115:/CloudNAS
+      - /vol1/1000/Docker/clouddrive2:/Config
     environment:
       - TZ=Asia/Shanghai
       - CLOUDDRIVE_HOME=/Config
