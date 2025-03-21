@@ -10,4 +10,3 @@ services:
       - TZ=Asia/Shanghai
     restart: always
     network_mode: bridge
-  
