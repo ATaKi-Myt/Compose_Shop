@@ -7,8 +7,8 @@ services:
       - 3075:19798
     volumes:
       - /vol1/1000/Docker/clouddrive2:/Config
-      - /vol1/1000/Cloud:/CloudNAS
-      - /vol1/1000/:/media
+      - /vol1/1000/Cloud:/CloudNAS:shared
+      - /vol1/1000/Video:/media:shared
     environment:
       - TZ=Asia/Shanghai
       - CLOUDDRIVE_HOME=/Config
