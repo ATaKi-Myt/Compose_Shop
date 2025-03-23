@@ -94,6 +94,18 @@ wget https://gh.llkk.cc/https://raw.githubusercontent.com/ATaKi-Myt/Last_Three_L
 此版本新增 46 个容器，以适配飞牛系统、绿联（新旧）、黑群晖系统。后续计划适配极空间及其他 Nas 系统。
 ### v 1.0.1
 此版本增至 54 个容器，其中包括（babybuddy、clouddrive2、homebox、icloudpd、mediago、ollama、open-webui）以适配飞牛系统、绿联（新旧）、黑群晖系统。后续计划适配极空间及其他 Nas 系统。
+### v 1.0.2
+此版本对下载加速链接进行了更新，更新链接如下：
+* 加速链接: https://gitproxy.click/
+* 加速链接: https://github.moeyy.xyz/
+* 加速链接: https://github.tbedu.top/
+* 加速链接: https://github.proxy.class3.fun/
+* 加速链接: https://ghfile.geekertao.top
+* 加速链接: https://github.proxy.class3.fun/
+* 加速链接: https://github-proxy.lixxing.top/
+* 加速链接: https://ghf.无名氏.top/
+* 加速链接: https://ghm.078465.xyz/
+* 加速链接: https://gh-proxy.net/
 ## 六、作者信息
 ### 1、哔哩哔哩：[最后三人行](https://space.bilibili.com/3546844344879871?spm_id_from=333.1007.0.0)
 ### 2、作者博客：[最后三人博客](https://bk.010322.xyz/)
