@@ -9,6 +9,6 @@ services:
       - /vol1/1000/Photos:/data
     environment:
       - TZ=Asia/Shanghai
-    command: icloudpd --directory /data --username 1563119813@qq.com --mfa-provider webui --domain cn --password-provider webui --watch-with-interval 3600
+    command: icloudpd --directory /data --username youemail@xx.xx --mfa-provider webui --domain cn --password-provider webui --watch-with-interval 3600
     restart: always
     network_mode: bridge
