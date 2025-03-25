@@ -5,7 +5,7 @@ services:
     ports:
       - 5000:8080
     volumes:
-      - /vol1/1000/Docker/reader/log:/log
-      - /vol1/1000/Docker/reader/storage:/storage
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/reader/log:/log
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/reader/storage:/storage
     restart: always
     network_mode: bridge
