@@ -5,8 +5,8 @@ services:
     ports:
       - 3040:9117
     volumes:
-      - /vol1/1000/Docker/jackett/config:/config
-      - /vol1/1000/Docker/jackett/downloads:/downloads
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/jackett/config:/config
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/jackett/downloads:/downloads
     environment:
       - PUID=0
       - PGID=0
