@@ -5,8 +5,8 @@ services:
     ports:
       - 11000:10086
     volumes:
-      - /vol1/1000/Docker/1panel:/opt/1panel
-      - /vol1/1000/:/vol1/1000/
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/1panel:/opt/1panel
+      - /tmp/zfsv3/sata11/13051661743/data/:/vol1/1000/
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - TZ=Asia/Shanghai
