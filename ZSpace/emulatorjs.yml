@@ -1,6 +1,6 @@
 services:
   emulatorjs:
-    image: lscr.io/linuxserver/emulatorjs:latest
+    image: linuxserver/emulatorjs:latest
     container_name: emulatorjs
     ports:
       - 10001:3000
