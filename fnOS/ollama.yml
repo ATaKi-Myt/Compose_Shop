@@ -1,6 +1,6 @@
 services:
   ollama:
-    image: ghcr.io/open-webui/open-webui:latest
+    image: ollama/ollama:latest
     container_name: ollama
     ports:
       - 11434:11434
