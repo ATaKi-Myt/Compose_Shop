@@ -5,7 +5,7 @@ services:
     ports:
       - 12010:9090
     volumes:
-      - /vol1/1000/Docker/cashbook/data:/app/data
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/cashbook/data:/app/data
     environment:
       DATABASE_URL: "postgresql://admin:password@127.0.0.1:5432/cashbook?schema=public"
       NUXT_DATA_PATH: "/app/data"
