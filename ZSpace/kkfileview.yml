@@ -5,7 +5,7 @@ services:
     ports:
     - 7030:8012
     volumes:
-       - /vol1/1000/Docker/kkfileview:/opt/kkFileView-4.4.0
+       - /tmp/zfsv3/sata11/13051661743/data/Docker/kkfileview:/opt/kkFileView-4.4.0
     environment:
       - KK_OFFICE_PREVIEW_TYPE=pdf
       - KK_OFFICE_PREVIEW_SWITCH_DISABLED=true
