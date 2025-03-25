@@ -5,7 +5,7 @@ services:
     ports:
       - 3100:7745
     volumes:
-      - /vol1/1000/Docker/homebox:/data/
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/homebox:/data/
     environment:
       - TZ=Asia/Shanghai
     restart: always
