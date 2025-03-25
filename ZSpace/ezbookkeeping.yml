@@ -5,8 +5,8 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - /vol1/1000/Docker/ezbookkeeping/storage:/ezbookkeeping/storage
-      - /vol1/1000/Docker/ezbookkeeping/log:/ezbookkeeping/log
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/ezbookkeeping/storage:/ezbookkeeping/storage
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/ezbookkeeping/log:/ezbookkeeping/log
       - /etc/localtime:/etc/localtime:ro
     environment:
       - EBK_SERVER_ENABLE_GZIP=true
