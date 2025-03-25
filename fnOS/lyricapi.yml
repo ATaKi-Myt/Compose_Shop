@@ -1,6 +1,6 @@
 services:
   lyricapi:
-    image: hisatri/lyricapi
+    image: hisatri/lyricapi:latest
     container_name: lyricapi
     ports:
       - 4030:28883
