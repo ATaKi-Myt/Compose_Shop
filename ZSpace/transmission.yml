@@ -5,8 +5,8 @@ services:
     ports:
       - 3025:9091
     volumes:
-      - /vol1/1000/Docker/transmission:/config
-      - /vol1/1000/Video:/downloads
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/transmission:/config
+      - /tmp/zfsv3/sata11/13051661743/data/Video:/downloads
     environment:
       - PUID=0
       - PGID=0
