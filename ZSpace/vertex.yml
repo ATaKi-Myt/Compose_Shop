@@ -5,7 +5,7 @@ services:
     ports:
       - 3050:32110
     volumes:
-      - /vol1/1000/Docker/vertex:/vertex
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/vertex:/vertex
     environment:
       - PORT=32110
       - TZ=Asia/Shanghai
