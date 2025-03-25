@@ -5,7 +5,7 @@ services:
     ports:
       - 9000:3002
     volumes:
-      - /vol1/1000/Docker/sun-panel:/app/conf
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/sun-panel:/app/conf
       - /var/run/docker.sock:/var/run/docker.sock
     restart: always
     network_mode: bridge
