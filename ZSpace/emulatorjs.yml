@@ -6,8 +6,8 @@ services:
       - 10001:3000
       - 10000:80
     volumes:
-      - /vol1/1000/Docker/emulatorjs/config:/config
-      - /vol1/1000/Docker/emulatorjs/data:/data
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/emulatorjs/config:/config
+      - /tmp/zfsv3/sata11/13051661743/data/emulatorjs/data:/data
     environment:
       - PUID=1000
       - PGID=1000
