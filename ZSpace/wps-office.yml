@@ -6,9 +6,9 @@ services:
       - 7000:3000
       - 7001:3001
     volumes:
-      - /vol1/1000/Docker/wps-office/config:/config
-      - /vol1/1000/Docker/wps-office/Desktop:/config/Desktop
-      - /vol1/1000/Docker/wps-office/Fonts:/usr/share/fonts/wps-fonts
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/wps-office/config:/config
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/wps-office/Desktop:/config/Desktop
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/wps-office/Fonts:/usr/share/fonts/wps-fonts
     environment:
       - PUID=0
       - PGID=0
