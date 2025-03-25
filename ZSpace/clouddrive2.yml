@@ -6,9 +6,9 @@ services:
     ports:
       - 3075:19798
     volumes:
-      - /vol1/1000/Docker/clouddrive2:/Config
-      - /vol1/1000/Cloud:/CloudNAS:shared
-      - /vol1/1000/Video:/media:shared
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/clouddrive2:/Config
+      - /tmp/zfsv3/sata11/13051661743/data/Cloud:/CloudNAS:shared
+      - /tmp/zfsv3/sata11/13051661743/data/Video:/media:shared
     environment:
       - TZ=Asia/Shanghai
       - CLOUDDRIVE_HOME=/Config
