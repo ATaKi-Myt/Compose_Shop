@@ -5,6 +5,6 @@ services:
     ports:
       - 8899:8899
     volumes:
-      - /vol1/1000/Downloads:/root/mediago
+      - /tmp/zfsv3/sata11/13051661743/data/Downloads:/root/mediago
     restart: always
     network_mode: bridge
