@@ -8,7 +8,7 @@ services:
       - --workspace=/siyuan/workspace/
       - --accessAuthCode=100
     volumes:
-      - /vol1/1000/Docker/siyuan-note-unlock:/siyuan/workspace
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/siyuan-note-unlock:/siyuan/workspace
     environment:
       - PUID=1000
       - PGID=100
