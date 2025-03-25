@@ -5,7 +5,7 @@ services:
     ports:
       - 3000:8080
     volumes:
-      - /vol1/1000/Docker/open-webui:/app/backend/data
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/open-webui:/app/backend/data
     environment:
       - ENABLE_OPENAI_API=False
       - OFFLINE_MODE=True
