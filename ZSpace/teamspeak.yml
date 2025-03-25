@@ -1,7 +1,7 @@
 services:
 
   teamspeak:
-    image: teamspeak
+    image: teamspeak:latest
     container_name: teamspeak
     ports:
       - 10010:9987/udp
