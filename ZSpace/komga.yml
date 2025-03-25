@@ -5,8 +5,8 @@ services:
     ports:
       - 6010:25600
     volumes:
-      - /vol1/1000/Docker/komga/config:/config
-      - /vol1/1000/Docker/komga/data:/data
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/komga/config:/config
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/komga/data:/data
     environment:
       - PUID=1000
       - PGID=1000
