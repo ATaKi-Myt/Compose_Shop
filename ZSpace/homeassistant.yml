@@ -5,7 +5,7 @@ services:
     ports:
       - 11020:8123
     volumes:
-      - /vol1/1000/Docker/homeassistant:/config
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/homeassistant:/config
     environment:
       - TZ=Asia/Shanghai
     restart: always
