@@ -11,7 +11,7 @@ services:
       - /tmp/zfsv3/sata11/13051661743/data/Docker/siyuan-note-unlock:/siyuan/workspace
     environment:
       - PUID=1016
-      - PGID=10017
+      - PGID=1017
       - UMASK=022
       - TZ=Asia/Shanghai
       - LANG=zh_CN.UTF-8
