@@ -6,8 +6,8 @@ services:
     ports:
       - 3035:2345
     volumes:
-      - /vol1/1000/Docker/xunlei:/xunlei/data
-      - /vol1/1000/Downloads:/xunlei/downloads
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/xunlei:/xunlei/data
+      - /tmp/zfsv3/sata11/13051661743/data/Downloads:/xunlei/downloads
     environment:
       - XL_GID=0
       - XL_UID=0
