@@ -5,10 +5,10 @@ services:
     ports:
       - 3030:8780
     volumes:
-      - /vol1/1000/Docker/iyuuplus/iyuu:/iyuu
-      - /vol1/1000/Docker/iyuuplus/data:/data
-      - /vol1/1000/Docker/qbittorrent/qBittorrent/BT_backup:/qb
-      - /vol1/1000/Docker/transmission/torrents:/tr
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/iyuuplus/iyuu:/iyuu
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/iyuuplus/data:/data
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/qbittorrent/qBittorrent/BT_backup:/qb
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/transmission/torrents:/tr
     environment:
       - PUID=0
       - PGID=0
