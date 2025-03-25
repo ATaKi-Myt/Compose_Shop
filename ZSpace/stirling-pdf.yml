@@ -5,11 +5,11 @@ services:
     ports:
       - 7020:8080
     volumes:
-      - /vol1/1000/Docker/pdftool/trainingData:/usr/share/tessdata
-      - /vol1/1000/Docker/pdftool/extraConfigs:/configs
-      - /vol1/1000/Docker/pdftool/customFiles:/customFiles/
-      - /vol1/1000/Docker/pdftool/logs:/logs/
-      - /vol1/1000/Docker/pdftool/pipeline:/pipeline/
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/pdftool/trainingData:/usr/share/tessdata
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/pdftool/extraConfigs:/configs
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/pdftool/customFiles:/customFiles/
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/pdftool/logs:/logs/
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/pdftool/pipeline:/pipeline/
     environment:
       - DOCKER_ENABLE_SECURITY=false
       - LANGS=en_GB
