@@ -1,5 +1,4 @@
 services:
-
   teamspeak:
     image: teamspeak:latest
     container_name: teamspeak
