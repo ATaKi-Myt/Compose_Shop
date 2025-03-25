@@ -5,7 +5,7 @@ services:
     ports:
       - 3055:8000
     volumes:
-      - /vol1/1000/Docker/iptv-api/config:/iptv-api/config
-      - /vol1/1000/Docker/iptv-api/output:/iptv-api/output
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/iptv-api/config:/iptv-api/config
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/iptv-api/output:/iptv-api/output
     restart: always
     network_mode: bridge
