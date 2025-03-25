@@ -6,6 +6,6 @@ services:
     ports:
       - 8020:2017
     volumes:
-      - /vol1/1000/Docker/v2raya:/etc/v2raya
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/v2raya:/etc/v2raya
     restart: always
     network_mode: bridge
