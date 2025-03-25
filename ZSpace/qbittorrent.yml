@@ -5,8 +5,8 @@ services:
     ports:
       - 3020:3020
     volumes:
-      - /vol1/1000/Docker/qbittorrent:/config
-      - /vol1/1000/Video:/downloads
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/qbittorrent:/config
+      - /tmp/zfsv3/sata11/13051661743/data/Video:/downloads
     environment:
       - PUID=1000
       - PGID=1000
