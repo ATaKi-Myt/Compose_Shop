@@ -8,6 +8,6 @@ services:
       - /vol1/1000/Docker/xiaoaimusic:/app/conf
       - /vol1/1000/Music:/app/music
     environment:
-      XIAOMUSIC_PUBLIC_PORT: 8090
+      - XIAOMUSIC_PUBLIC_PORT=8090
     restart: always
     network_mode: bridge
