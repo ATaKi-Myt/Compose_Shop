@@ -5,7 +5,7 @@ services:
     ports:
       - 7050:5244
     volumes:
-      - /vol1/1000/Docker/alist:/opt/alist/data
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/alist:/opt/alist/data
     environment:
       - PUID=0
       - PGID=0
