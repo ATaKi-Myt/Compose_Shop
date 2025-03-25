@@ -6,7 +6,7 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - /vol1/1000/Photos:/data
+      - /tmp/zfsv3/sata11/13051661743/data/Photos:/data
     environment:
       - TZ=Asia/Shanghai
     command: icloudpd --directory /data --username youemail@xx.xx --mfa-provider webui --domain cn --password-provider webui --watch-with-interval 3600
