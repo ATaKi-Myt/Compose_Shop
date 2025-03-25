@@ -5,8 +5,8 @@ services:
     ports:
       - 11434:11434
     volumes:
-      - /vol1/1000/Docker/ollama:/root/.ollama
-      - /vol1/1000/Docker/ollama/models:/data/models
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/ollama:/root/.ollama
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/ollama/models:/data/models
     environment:
       - TZ=Asia/Shanghai
     restart: always
