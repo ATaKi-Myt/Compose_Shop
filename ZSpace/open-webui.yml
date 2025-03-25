@@ -1,6 +1,6 @@
 services:
   open-webui:
-    image: ghcr.io/open-webui/open-webui:latest
+    image: open-webui/open-webui:latest
     container_name: open-webui
     ports:
       - 3000:8080
