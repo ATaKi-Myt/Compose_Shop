@@ -5,7 +5,7 @@ services:
     ports:
       - 4000:4533
     volumes:
-      - /vol1/1000/Docker/navidrome:/data
-      - /vol1/1000/Music:/music
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/navidrome:/data
+      - /tmp/zfsv3/sata11/13051661743/data/Music:/music
     restart: always
     network_mode: bridge
