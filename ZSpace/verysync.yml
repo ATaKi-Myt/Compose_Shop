@@ -5,6 +5,6 @@ services:
     ports:
       - 7010:8886
     volumes:
-      - /vol1/1000/Synchronous:/data
+      - /tmp/zfsv3/sata11/13051661743/data/Synchronous:/data
     restart: always
     network_mode: bridge
