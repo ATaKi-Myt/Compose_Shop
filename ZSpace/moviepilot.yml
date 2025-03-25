@@ -5,8 +5,8 @@ services:
     ports:
       - 3005:3000
     volumes:
-      - /vol1/1000/Video:/downloads
-      - /vol1/1000/Docker/moviepilot:/config
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/moviepilot:/config
+      - /tmp/zfsv3/sata11/13051661743/data/Video:/downloads
     environment:
       - NGINX_PORT=3000
       - PORT=3001
