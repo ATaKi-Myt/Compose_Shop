@@ -5,8 +5,8 @@ services:
     ports:
       - 8090:8090
     volumes:
-      - /vol1/1000/Docker/xiaoaimusic:/app/conf
-      - /vol1/1000/Music:/app/music
+      - /tmp/zfsv3/sata11/13051661743/data/Docker/xiaoaimusic:/app/conf
+      - /tmp/zfsv3/sata11/13051661743/data/Music:/app/music
     environment:
       XIAOMUSIC_PUBLIC_PORT: 8090
     restart: always
